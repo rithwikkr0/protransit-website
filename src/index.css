@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-primary: #1A237E;
+  --color-brand-primary-light: #3949AB;
+  --color-brand-primary-dark: #0D1757;
+  --color-brand-darkest: #070B24;
+  --color-brand-accent: #00BCD4;
+  --color-brand-accent-light: #E0F7FA;
+  --color-brand-bus: #2E7D32;
+  --color-brand-metro: #7B1FA2;
+  --color-brand-rail: #1565C0;
+  --color-brand-partner: #E65100;
+  --color-brand-success: #10B981;
+  --color-brand-warning: #F59E0B;
+  
+  --font-display: "Space Grotesk", system-ui, -apple-system, sans-serif;
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: #1e293b;
+  background-color: #070b24;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #070B24;
+}
+::-webkit-scrollbar-thumb {
+  background: #1E293B;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
