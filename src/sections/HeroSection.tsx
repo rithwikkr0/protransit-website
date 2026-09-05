@@ -13,15 +13,25 @@ export const HeroSection: React.FC = () => {
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         
-        {/* Trust & Category Pill */}
-        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold tracking-wide bg-gradient-to-r from-cyan-500/10 via-indigo-500/10 to-emerald-500/10 text-cyan-300 border border-cyan-500/20 shadow-lg shadow-cyan-950/50 mb-6 backdrop-blur-md animate-fade-in">
-          <span className="flex h-2 w-2 relative">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
-            <span className="relative inline-flex rounded-full h-2 w-2 bg-cyan-500"></span>
-          </span>
-          <span className="font-display">Smart India Hackathon 2026 Project</span>
-          <span className="text-slate-500">•</span>
-          <span className="text-slate-300">Transportation & Logistics</span>
+        {/* App Icon & Brand Badge */}
+        <div className="flex flex-col items-center justify-center mb-6">
+          <div className="relative mb-3 group">
+            <div className="absolute -inset-1.5 bg-gradient-to-r from-cyan-500 to-indigo-500 rounded-3xl blur-lg opacity-70 group-hover:opacity-100 transition duration-500"></div>
+            <div className="relative w-20 h-20 sm:w-24 sm:h-24 rounded-2xl overflow-hidden border-2 border-cyan-400/60 shadow-2xl bg-[#070B24] p-1">
+              <img src="/app-icon.png" alt="ProTransit Official App Icon" className="w-full h-full object-cover rounded-xl" />
+            </div>
+          </div>
+
+          {/* Trust & Category Pill */}
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold tracking-wide bg-gradient-to-r from-cyan-500/10 via-indigo-500/10 to-emerald-500/10 text-cyan-300 border border-cyan-500/20 shadow-lg shadow-cyan-950/50 backdrop-blur-md animate-fade-in">
+            <span className="flex h-2 w-2 relative">
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-cyan-500"></span>
+            </span>
+            <span className="font-display">Smart India Hackathon 2026 Project</span>
+            <span className="text-slate-500">•</span>
+            <span className="text-slate-300">Transportation & Logistics</span>
+          </div>
         </div>
 
         {/* Hero Headline */}

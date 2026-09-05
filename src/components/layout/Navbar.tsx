@@ -36,8 +36,8 @@ export const Navbar: React.FC = () => {
         <div className="flex items-center justify-between">
           {/* Brand Logo */}
           <a href="#" className="flex items-center gap-3 group focus:outline-none focus:ring-2 focus:ring-cyan-400 rounded-lg p-1">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#1A237E] to-[#0D1757] border border-cyan-400/30 flex items-center justify-center text-white shadow-md shadow-cyan-500/10 group-hover:border-cyan-400 transition-colors">
-              <Route className="w-5 h-5 text-cyan-400" />
+            <div className="w-10 h-10 rounded-xl overflow-hidden border border-cyan-400/40 shadow-md shadow-cyan-500/20 group-hover:border-cyan-400 group-hover:scale-105 transition-all shrink-0 bg-[#070B24]">
+              <img src="/app-icon.png" alt="ProTransit App Icon" className="w-full h-full object-cover" />
             </div>
             <div>
               <div className="flex items-center gap-2">

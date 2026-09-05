@@ -104,9 +104,15 @@ export const DownloadCenter: React.FC = () => {
               >
                 <div>
                   <div className="flex items-center justify-between mb-4">
-                    <div className="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-cyan-400">
-                      <Icon className="w-6 h-6" />
-                    </div>
+                    {d.badge === 'Release APK' ? (
+                      <div className="w-12 h-12 rounded-2xl overflow-hidden border border-cyan-400/50 shadow-md shadow-cyan-500/20 bg-[#070B24] shrink-0">
+                        <img src="/app-icon.png" alt="ProTransit App Icon" className="w-full h-full object-cover" />
+                      </div>
+                    ) : (
+                      <div className="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-cyan-400 shrink-0">
+                        <Icon className="w-6 h-6" />
+                      </div>
+                    )}
                     <span className="px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-white/5 text-cyan-300 border border-white/10">
                       {d.badge}
                     </span>
