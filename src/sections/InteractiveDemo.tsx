@@ -62,6 +62,65 @@ export const InteractiveDemo: React.FC = () => {
           subtitle="Test the core 8-step journey right inside your web browser before installing the native Android prototype."
         />
 
+        {/* 3-Device Real-Time Demonstration Workflow */}
+        <div className="max-w-4xl mx-auto mb-12 p-6 sm:p-8 rounded-3xl bg-[#090E2E] border border-cyan-500/20 shadow-xl">
+          <div className="text-center mb-6">
+            <span className="text-xs font-bold uppercase tracking-widest text-cyan-400 font-display">
+              Smart India Hackathon 2026 Demonstration Guide
+            </span>
+            <h3 className="text-xl sm:text-2xl font-bold text-white mt-1 font-display">
+              3-Device Cross-Role Demonstration Flow
+            </h3>
+            <p className="text-xs text-slate-400 mt-1.5 max-w-xl mx-auto font-sans">
+              Experience the synchronized ProTransit lifecycle running concurrently across sender, courier partner, and package receiver:
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            {/* Phone 1 */}
+            <div className="p-4 rounded-2xl bg-[#060A22] border border-cyan-500/30 text-center">
+              <span className="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-cyan-500/20 text-cyan-300 border border-cyan-500/30">
+                PHONE 1: SENDER
+              </span>
+              <h5 className="text-sm font-bold text-white mt-2 font-display">Customer (Rithwik)</h5>
+              <p className="text-xs text-slate-400 mt-1 font-sans">
+                Creates parcel & compares multi-carrier quotes. Confirms ProTransit and generates custody QR code.
+              </p>
+              <div className="mt-3 text-[11px] font-mono text-cyan-400">
+                Status: Hub QR Ready
+              </div>
+            </div>
+
+            {/* Phone 2 */}
+            <div className="p-4 rounded-2xl bg-[#060A22] border border-indigo-500/30 text-center">
+              <span className="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">
+                PHONE 2: PARTNER
+              </span>
+              <h5 className="text-sm font-bold text-white mt-2 font-display">Partner (Suresh)</h5>
+              <p className="text-xs text-slate-400 mt-1 font-sans">
+                Toggles online status, accepts delivery task, scans locker QR, and dispatches on EV two-wheeler.
+              </p>
+              <div className="mt-3 text-[11px] font-mono text-indigo-400">
+                Status: Out For Delivery
+              </div>
+            </div>
+
+            {/* Phone 3 */}
+            <div className="p-4 rounded-2xl bg-[#060A22] border border-emerald-500/30 text-center">
+              <span className="px-2 py-0.5 rounded text-[10px] font-mono font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+                PHONE 3: RECEIVER
+              </span>
+              <h5 className="text-sm font-bold text-white mt-2 font-display">Receiver (Arjun)</h5>
+              <p className="text-xs text-slate-400 mt-1 font-sans">
+                Tracks incoming parcel via live telemetry. Provides 4-digit secret OTP (1234) for final delivery verification.
+              </p>
+              <div className="mt-3 text-[11px] font-mono text-emerald-400">
+                Status: Delivered
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* Demo Console Window */}
         <div className="max-w-4xl mx-auto rounded-3xl bg-[#0B1033] border border-cyan-500/30 shadow-2xl overflow-hidden">
           {/* Top Window Bar */}

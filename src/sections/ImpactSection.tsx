@@ -123,6 +123,13 @@ export const ImpactSection: React.FC = () => {
           </div>
         </div>
 
+        {/* Careful Wording / Academic Estimations Disclaimer */}
+        <div className="mt-8 text-center max-w-3xl mx-auto">
+          <p className="text-[11px] text-slate-500 font-sans leading-relaxed">
+            * <span className="font-semibold text-slate-400">Prototype Impact Modeling Note:</span> Societal, cost, and carbon reduction figures represent algorithmic model estimates comparing permitted public transit corridors against dedicated individual point-to-point road courier trips. They reflect simulated operational potential rather than independently certified audit figures.
+          </p>
+        </div>
+
       </div>
     </section>
   );

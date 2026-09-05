@@ -86,6 +86,31 @@ export const TechnologySection: React.FC = () => {
           })}
         </div>
 
+        {/* Core Tech Stack Badges Grid */}
+        <div className="max-w-4xl mx-auto mb-16 p-6 rounded-3xl bg-[#090E2E] border border-cyan-500/20">
+          <h4 className="text-sm font-bold text-center uppercase tracking-widest text-cyan-400 font-display mb-4">
+            Core Technology Components
+          </h4>
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+            {[
+              { name: 'Flutter + Dart', desc: 'Cross-platform reactive mobile UI' },
+              { name: 'FastAPI Backend', desc: 'High-speed asynchronous Python services' },
+              { name: 'PostgreSQL + PostGIS', desc: 'Spatial database & topology graphs' },
+              { name: 'WebSocket Telemetry', desc: 'Realtime hub & parcel synchronization' },
+              { name: 'JWT & OTP Auth', desc: 'Role tokens & 4-digit secret verification' },
+              { name: 'Multimodal TDSP Engine', desc: 'Time-dependent shortest path graph solver' },
+              { name: 'Geolocation Services', desc: 'Hub radius tracking & proximity dispatch' },
+              { name: 'QR Handover Tokens', desc: 'Cryptographic station check-in verification' },
+              { name: 'Role-Based Access Control', desc: 'Customer, Partner, Receiver, Admin RBAC' }
+            ].map((t) => (
+              <div key={t.name} className="p-3 rounded-xl bg-[#060A22] border border-white/10">
+                <span className="text-xs font-bold text-white block font-display">{t.name}</span>
+                <span className="text-[11px] text-slate-400 block font-sans mt-0.5">{t.desc}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
         {/* Differentiate: Current Prototype vs Future Architecture */}
         <div className="max-w-5xl mx-auto rounded-3xl bg-[#0A0E2E] border border-white/10 p-6 sm:p-8 shadow-2xl">
           <div className="text-center max-w-xl mx-auto mb-8">
@@ -105,12 +130,16 @@ export const TechnologySection: React.FC = () => {
             <div className="p-6 rounded-2xl bg-[#070B24] border border-emerald-500/30">
               <div className="flex items-center gap-2 text-emerald-400 font-bold text-sm mb-4 font-display">
                 <CheckCircle2 className="w-4 h-4" />
-                <span>CURRENT WORKING PROTOTYPE (SIH 2026)</span>
+                <span>CURRENT WORKING PROTOTYPE (PROTRANSIT 2.0 MVP)</span>
               </div>
               <ul className="space-y-2.5 text-xs text-slate-300 font-sans">
                 <li className="flex items-center gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0" />
-                  Flutter Android Native App (48.13 MB release APK)
+                  Flutter Android Native App (50.17 MB release APK verified)
+                </li>
+                <li className="flex items-center gap-2">
+                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0" />
+                  Multi-Role support: Customer, Partner, Receiver, Admin Operations
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0" />
@@ -126,7 +155,7 @@ export const TechnologySection: React.FC = () => {
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 shrink-0" />
-                  Automated test suite (14-screen interactive flow passed)
+                  Automated test suites (flow_test and multi_role_test passed)
                 </li>
               </ul>
             </div>

@@ -6,6 +6,7 @@ import { ProblemSection } from './sections/ProblemSection';
 import { SolutionSection } from './sections/SolutionSection';
 import { HowItWorksSection } from './sections/HowItWorksSection';
 import { ComparisonSection } from './sections/ComparisonSection';
+import { PartnerNetworkSection } from './sections/PartnerNetworkSection';
 import { ProductShowcase } from './sections/ProductShowcase';
 import { NetworkSection } from './sections/NetworkSection';
 import { TechnologySection } from './sections/TechnologySection';
@@ -33,6 +34,7 @@ export function App() {
         <SolutionSection />
         <HowItWorksSection />
         <ComparisonSection />
+        <PartnerNetworkSection />
         <ProductShowcase />
         <NetworkSection />
         <TechnologySection />

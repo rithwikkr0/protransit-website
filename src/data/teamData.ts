@@ -9,6 +9,8 @@ export interface TeamMember {
 
 export const PROJECT_METADATA = {
   projectName: 'PROTRANSIT',
+  version: 'ProTransit 2.0',
+  edition: 'SIH 2026 MVP',
   tagline: 'Connecting Cities. Moving Goods Smarter.',
   hackathon: 'Smart India Hackathon 2026',
   category: 'Software Edition',
@@ -18,9 +20,9 @@ export const PROJECT_METADATA = {
   githubUser: 'rithwikkr0',
   githubRepoName: 'protransit-website',
   githubUrl: 'https://github.com/rithwikkr0/protransit-website',
-  releaseApkName: 'protransit.apk',
-  apkSizeMb: '48.13 MB',
-  apkReleaseTag: 'v1.0.0'
+  releaseApkName: 'protransit-release.apk',
+  apkSizeMb: '50.17 MB',
+  apkReleaseTag: 'ProTransit 2.0 — SIH 2026 MVP'
 };
 
 export const TEAM_MEMBERS: TeamMember[] = [

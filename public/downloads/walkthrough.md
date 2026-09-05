@@ -58,19 +58,21 @@ Key design principles maintained:
 
 | Test Stage | Command | Result | Details |
 | :--- | :--- | :--- | :--- |
-| **Dart Analyzer** | `dart analyze lib test` | **PASS (0 issues)** | Zero errors, zero warnings |
+| **Dart Analyzer** | `flutter analyze` | **PASS (0 issues)** | Zero errors, zero warnings, 0 issues found |
 | **Widget Smoke Test** | `flutter test test/widget_test.dart` | **PASS** | App boots and mounts main scaffold |
-| **End-to-End Flow Test** | `flutter test test/flow_test.dart` | **PASS** | Full 14-screen interactive test passes |
+| **End-to-End Flow Test** | `flutter test test/flow_test.dart` | **PASS** | Full 14-screen customer prototype flow passes |
+| **Multi-Role Flow Test** | `flutter test test/multi_role_test.dart` | **PASS** | Cross-role Customer → Partner → Receiver → Admin live synchronization |
 | **Android Release Build** | `flutter build apk --release` | **SUCCESS** | Gradle task `assembleRelease` succeeded |
-| **Release APK Size** | `Get-Item .../app-release.apk` | **48.13 MB** | `50,465,976 bytes` |
-| **On-Device Install** | `adb install -r app-release.apk` | **SUCCESS** | Streamed install on emulator |
-| **Interactive Flow** | `adb shell input ...` | **PASS** | Verified end-to-end with visual capture |
+| **Release APK Size** | `Get-Item .../app-release.apk` | **50.17 MB** | `52,607,363 bytes` |
+| **Companion Website Sync** | `Copy-Item .../protransit-release.apk` | **SUCCESS** | Synchronized to `protransit-website/public/downloads/` |
 
 ---
 
 ## 📦 Final Release Artifact
 
-- **APK Path**: `c:/Users/rithw/OneDrive/Documents/App Dev/Workspace/AndroidApps/protransit/build/app/outputs/flutter-apk/app-release.apk`
-- **File Size**: `48.13 MB` (`50,465,976 bytes`)
+- **Flutter APK Path**: `C:/Users/rithw/OneDrive/Documents/App Dev/Workspace/AndroidApps/protransit/build/app/outputs/flutter-apk/app-release.apk`
+- **Website Download Path**: `C:/Users/rithw/OneDrive/Documents/App Dev/protransit-website/public/downloads/protransit-release.apk`
+- **File Size**: `50.17 MB` (`52,607,363 bytes`)
 - **Package Name**: `com.protransit.protransit`
 - **Main Activity**: `com.protransit.protransit/.MainActivity`
+- **Build Timestamp**: `05-09-2026 13:11:13`
